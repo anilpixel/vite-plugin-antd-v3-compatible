@@ -1,0 +1,11 @@
+language: node_js
+
+cache: yarn
+
+deploy:
+  - provider: npm
+    email: eziosyanse@gmail.com
+    api_key: $npm_token
+    skip_cleanup: true
+    on:
+      tags: true
