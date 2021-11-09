@@ -1,20 +1,18 @@
-# Vite + Typescript + Eslint + Prettier
-
-A starter for build library with Typescript with the fast Vite and all static code testing with Eslint and formatting with Prettier.
-
-[Vite](https://github.com/vitejs/vite) + [Typescript](https://www.typescriptlang.org/) + [Eslint](https://eslint.org/) + [Prettier](https://prettier.io/)
+# vite-plugin-antd-v3-compatible
 
 ## Installation
 
 ```shell
-  degit anilpixel/vite-library-boilerplate
-  yarn
+  yarn add vite-plugin-antd-v3-compatible
 ```
 
-## Start
+## Use
 
-After the successful installation of the packages: `yarn dev`
+```javascript
+// vite.config.ts
+import { vitePluginAntdV3Compatible } from 'vite-plugin-antd-v3-compatible'
 
-## Build
-
-`yarn build`
+// ...
+plugins: [vitePluginAntdV3Compatible()]
+// ...
+```
