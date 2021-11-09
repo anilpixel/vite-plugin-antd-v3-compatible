@@ -1,5 +1,7 @@
 # vite-plugin-antd-v3-compatible
 
+![build](https://app.travis-ci.com/anilpixel/vite-plugin-antd-v3-compatible.svg?branch=main)
+
 ## Installation
 
 ```shell

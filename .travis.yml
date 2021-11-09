@@ -3,12 +3,15 @@ language: node_js
 node_js:
   - 15
 
+before_install:
+  - npm i -g makeshift && makeshift -s @bcoe -r https://registry.npmjs.org
+
 cache: yarn
 
 deploy:
   - provider: npm
     email: eziosyanse@gmail.com
-    api_key: $npm_token
+    api_key: $NPM_TOKEN
     skip_cleanup: true
     on:
       tags: true
